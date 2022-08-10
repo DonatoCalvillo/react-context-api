@@ -17,7 +17,6 @@ const PokemonProvider = ({children}) => {
             setHasError(false);
             setErrorMessage("");
 
-            // throw new Error("hey");
             const pokemonsResult = await apiCall({
                 url: "https://pokeapi.co/api/v2/pokemon?limit=100&offset=0"
             });
